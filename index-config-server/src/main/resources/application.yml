@@ -1,0 +1,17 @@
+spring: 
+   application: 
+      name: index-config-server
+   cloud: 
+      config: 
+         #分支
+         label: master
+         server: 
+            git: 
+               #git地址
+               uri: https://github.com/JieJueSama/springcloudConfig/
+               #目录
+               searchPaths: respo
+eureka: 
+   client: 
+      serviceUrl: 
+         defaultZone: http://localhost:8761/eureka/
